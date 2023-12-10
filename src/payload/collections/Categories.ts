@@ -1,4 +1,4 @@
-import type { CollectionConfig } from 'payload/types'
+ import type { CollectionConfig } from 'payload/types'
 
 const Categories: CollectionConfig = {
   slug: 'categories',
@@ -12,6 +12,12 @@ const Categories: CollectionConfig = {
     {
       name: 'title',
       type: 'text',
+      required: true,
+    },
+    {
+      name:'media',
+      type:'upload',
+      relationTo: 'media',
     },
   ],
 }
