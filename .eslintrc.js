@@ -6,5 +6,7 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'no-console': 'off',
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   },
 }
